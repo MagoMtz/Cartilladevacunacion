@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginStart="@dimen/input_margin"
+    android:layout_marginEnd="@dimen/input_margin"
+    tools:context=".vaccine.PetInfoActivity"
+    tools:showIn="@layout/activity_pet_info">
+
+    <TextView
+        android:id="@+id/pet_info_pet_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_name_view"
+        android:layout_marginStart="@dimen/description_margin"
+        tools:text="Snooky"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_kind_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_kind"
+        android:layout_below="@id/pet_info_pet_name"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_kind_view"
+        android:layout_below="@id/pet_info_pet_name"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="Canino"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_sex_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_sex"
+        android:layout_below="@id/pet_info_pet_kind"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_sex_view"
+        android:layout_below="@id/pet_info_pet_kind"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="M"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_birthday_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_birthday"
+        android:layout_below="@id/pet_info_pet_sex"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_birthday_view"
+        android:layout_below="@id/pet_info_pet_sex"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="12/05/2009"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_breed_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_breed"
+        android:layout_below="@id/pet_info_pet_birthday"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_breed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_breed_view"
+        android:layout_below="@id/pet_info_pet_birthday"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="Hamilton Stovare"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_color_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_color"
+        android:layout_below="@id/pet_info_pet_breed"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_color_view"
+        android:layout_below="@id/pet_info_pet_breed"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="Negro"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_id_number_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_id_number"
+        android:layout_below="@id/pet_info_pet_color"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_id_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_id_number_view"
+        android:layout_below="@id/pet_info_pet_color"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="21456"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_particular_signs_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_particular_signs"
+        android:layout_below="@id/pet_info_pet_id_number"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_particular_signs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_particular_signs_view"
+        android:layout_below="@id/pet_info_pet_id_number"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="Verruga en pata delantera derecha"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_micro_chip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_micro_chip"
+        android:layout_below="@id/pet_info_pet_particular_signs"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_micro_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_micro_chip_view"
+        android:layout_below="@id/pet_info_pet_particular_signs"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="No"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_tattoo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pet_info_pet_tattoo"
+        android:layout_below="@id/pet_info_pet_particular_signs"
+        android:layout_toEndOf="@id/pet_info_pet_micro_chip"
+        android:layout_marginTop="@dimen/input_margin"
+        android:layout_marginStart="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/pet_info_pet_tattoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/pet_info_pet_tattoo_view"
+        android:layout_below="@id/pet_info_pet_particular_signs"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="No"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/owner_info_owner_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_info_owner_name"
+        android:layout_below="@id/pet_info_pet_tattoo"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/owner_info_owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/owner_info_owner_name_view"
+        android:layout_below="@id/pet_info_pet_tattoo"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="Guadalupe Martínez Robledo"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/owner_info_owner_address_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_info_owner_address"
+        android:layout_below="@id/owner_info_owner_name"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/owner_info_owner_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/owner_info_owner_address_view"
+        android:layout_below="@id/owner_info_owner_name"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="Bugambilias 11"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/owner_info_owner_phone_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_info_owner_phone"
+        android:layout_below="@id/owner_info_owner_address"
+        android:layout_marginTop="@dimen/input_margin"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/owner_info_owner_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/owner_info_owner_phone_view"
+        android:layout_below="@id/owner_info_owner_address"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginTop="@dimen/input_margin"
+        tools:text="7354569875"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="italic|bold"/>
+
+</RelativeLayout>

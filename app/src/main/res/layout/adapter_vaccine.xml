@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dynamic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/description_margin"
+    android:padding="@dimen/description_margin"
+    android:background="@color/colorVaccine"
+    >
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vaccine_info_application_date"
+            />
+
+        <TextView
+            android:id="@+id/vaccine_application_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/description_margin"
+            android:layout_gravity="center"
+            tools:text="25/11/2017"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/date_layout"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_marginEnd="@dimen/description_margin">
+
+        <ImageView
+            android:id="@+id/vaccine_ticket"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_vaccine"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/next_appointment_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/description_margin"
+        android:layout_toEndOf="@id/img_layout"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vaccine_info_next_appointment_date"
+            />
+
+        <TextView
+            android:id="@+id/vaccine_next_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/description_margin"
+            android:layout_gravity="center"
+            tools:text="25/11/2017"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

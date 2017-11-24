@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_pet"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:srcCompat="@drawable/dog"/>
+
+        <TextView
+            android:id="@+id/pet_name"
+            android:layout_toEndOf="@id/img_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="pet_name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/pet_owner"
+            android:layout_toEndOf="@id/img_pet"
+            android:layout_below="@id/pet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            tools:text="pet_owner"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/btn_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/img_pet"
+            app:srcCompat="@drawable/ic_edit_black"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginStart="150dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

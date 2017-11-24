@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="input_margin">16dp</dimen>
+    <dimen name="description_margin">6dp</dimen>
+</resources>
